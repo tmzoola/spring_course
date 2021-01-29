@@ -14,8 +14,12 @@ public class Test2 {
 
         University university = context.getBean("university", University.class);
         university.addStudent();
-        university.getStudents();
-        university.getStudents();
+        try{
+            university.getStudents();
+        }catch (Exception exception){
+            System.out.println("Exception has been caught " + exception);
+        }
+
 
 //        Student student = new Student("Javo", 1, 2.0);
 //        List<Student> students = new ArrayList<>();
