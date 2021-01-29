@@ -15,9 +15,10 @@ public class UniLibrary extends AbsractLibrary{
         System.out.println("------------------------------------------------------");
     }
 
-    public void returnBook(){
+    public String returnBook(){
         System.out.println("We are returning book: UniLibrary: returnBook");
-        System.out.println("------------------------------------------------------");
+        return "War and peace";
+//        System.out.println("------------------------------------------------------");
     }
 
 
